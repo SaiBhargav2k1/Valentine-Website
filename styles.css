@@ -148,7 +148,7 @@ header p {
 
 .gallery-item {
   height: 200px; /* Fixed height */
-  width: 200px /* Full width of the grid cell */
+  width: 100% /* Full width of the grid cell */
 }
 
 .gallery-item img {
