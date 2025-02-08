@@ -24,8 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
   message.addEventListener('click', () => {
     alert('I love you to the moon and back! 🌙❤️');
   });
+
+  const downArrow = document.querySelector('.down-arrow');
+  if (downArrow) {
+    downArrow.addEventListener('click', () => {
+      document.getElementById('love-story').scrollIntoView({ behavior: 'smooth' });
+    });
+  }
 });
 
-function scrollToStory() {
-    document.getElementById('love-story').scrollIntoView({ behavior: 'smooth' });
-  }
