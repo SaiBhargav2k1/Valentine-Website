@@ -96,7 +96,7 @@ header p {
   padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
   height: 0;
   overflow: hidden;
-  max-width: 100%;
+  max-width: 50%;
   background: #000;
 }
 
