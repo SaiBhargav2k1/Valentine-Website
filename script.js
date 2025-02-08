@@ -25,3 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     alert('I love you to the moon and back! 🌙❤️');
   });
 });
+
+function scrollToStory() {
+    document.getElementById('love-story').scrollIntoView({ behavior: 'smooth' });
+  }
