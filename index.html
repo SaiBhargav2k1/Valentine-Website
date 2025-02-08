@@ -12,13 +12,14 @@
             color: white;
             font-family: 'Poppins', sans-serif;
             margin: 0;
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
         .container {
             margin-top: 50px;
             position: relative;
             z-index: 1;
+            padding-bottom: 150px; /* Added more bottom space */
         }
 
         h1 {
@@ -53,10 +54,10 @@
             position: absolute;
             bottom: -10px;
             left: 50%;
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
             background: red;
-            animation: float 6s infinite ease-in-out;
+            animation: float 8s infinite ease-in-out;
             transform: rotate(-45deg);
         }
 
@@ -64,19 +65,19 @@
         .heart::after {
             content: '';
             position: absolute;
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
             background: red;
             border-radius: 50%;
         }
 
         .heart::before {
-            top: -10px;
+            top: -12px;
             left: 0;
         }
 
         .heart::after {
-            left: 10px;
+            left: 12px;
             top: 0;
         }
 
@@ -87,12 +88,12 @@
             }
 
             50% {
-                transform: translateY(-200px) scale(1.2);
+                transform: translateY(-300px) scale(1.2);
                 opacity: 0.8;
             }
 
             100% {
-                transform: translateY(-500px) scale(1.5);
+                transform: translateY(-700px) scale(1.5);
                 opacity: 0;
             }
         }
@@ -137,6 +138,10 @@
                 font-size: 16px;
                 padding: 10px 20px;
             }
+
+            .container {
+                padding-bottom: 200px; /* Extra space for mobile */
+            }
         }
     </style>
 </head>
@@ -145,7 +150,7 @@
     <div class="container">
         <h1>Happy Valentine's Day, My Love! ❤️</h1>
         <div class="video-container">
-            <iframe src="https://drive.google.com/file/d/1522n-i7EI3AEo0EganHXXy-1RuzCVgAl/preview" frameborder="0"
+            <iframe src="https://www.youtube.com/embed/BJVakfC4O2I" frameborder="0"
                 allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <p class="message">You are the best thing that ever happened to me! I love you! 💖</p>
@@ -155,16 +160,16 @@
     <!-- Floating Hearts Animation -->
     <script>
         function showHearts() {
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < 25; i++) {
                 let heart = document.createElement('div');
                 heart.className = 'heart';
                 heart.style.left = Math.random() * 100 + 'vw';
-                heart.style.animationDuration = Math.random() * 2 + 4 + 's';
+                heart.style.animationDuration = Math.random() * 2 + 6 + 's'; // Hearts float for longer
                 document.body.appendChild(heart);
 
                 setTimeout(() => {
                     heart.remove();
-                }, 5000);
+                }, 7000);
             }
         }
     </script>
