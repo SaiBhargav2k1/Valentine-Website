@@ -26,9 +26,10 @@ header p {
 }
 
 /* Heart Animation */
-.heart-animation img {
+.heart-animation {
   width: 100px;
   height: 100px;
+  background: url('https://iconduck.com/emojis/16493/beating-heart') no-repeat center center/contain;
   position: absolute;
   top: 50%;
   left: 50%;
