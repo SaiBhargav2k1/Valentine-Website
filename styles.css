@@ -237,12 +237,12 @@ footer {
 .scroll-down {
   text-align: center;
   margin: 20px 0;
-  font-size: 1.2em;
+  font-size: 2em;
   font-family: 'Dancing Script', cursive;
 }
 
 .down-arrow {
-  font-size: 4em;
+  font-size: 3em;
   cursor: pointer;
   animation: bounce 1.5s infinite;
 }
