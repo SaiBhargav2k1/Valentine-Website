@@ -103,7 +103,10 @@ header p {
   margin: 20px 0;
   font-size: 1.2em;
   font-family: 'Dancing Script', cursive;
-  background: #ff9aa2
+}
+
+.scroll-down p {
+  color: #ff4757
 }
 
 .down-arrow {
